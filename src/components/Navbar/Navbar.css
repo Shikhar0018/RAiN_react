@@ -1,0 +1,284 @@
+.NavbarItems{
+    background: #212121;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+Button{
+    display: none;
+}
+
+.navbar-logo{
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.fa-react{
+    margin-left: 0.5rem;
+    font-size: 1.6rem;
+    
+}
+
+.nav-menu{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.nav-menu {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .nav-menu * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .nav-menu a {
+    padding: .5em .8em;
+    color: rgba(255,255,255,.5);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav-menu a::before,
+  .nav-menu a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav-menu a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #3E8914;
+    border-right: 3px solid #2E640F;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav-menu a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #2E640F;
+    border-left: 3px solid #3E8914;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav-menu a:hover:before,
+  .nav-menu a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav-menu a:hover {
+    color: #3DA35D;
+  }
+
+.nav-links{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+
+}
+
+ 
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+@media screen and (max-width: 1000px){
+    .NavbarItems {
+        position: relative;
+    }
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top : 80px;     
+        left: -100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active{
+      background: rgb(104,101,199);
+      background: linear-gradient(90deg, rgba(104,101,199,1) 0%, rgba(100,110,198,1) 23%, rgba(99,111,196,1) 45%, rgba(79,111,169,1) 65%, rgba(78,164,181,1) 100%);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover{
+        background-color: #7577fa;
+        border-radius: 0;
+    }
+
+    .navbar-logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(25%,50%);
+    }
+
+    .menu-icon{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile{
+        display: block;
+        text-align: center;
+        padding: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        background: #4ad9e4;
+        text-decoration: none;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+
+    .nav-links-mobile:hover{
+        background: #fff;
+        color: #6568F4;
+        transition: 250ms; 
+    }
+
+    Button{
+        display: none;
+    }
+}
+  
+
+  .nav-menu.active ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .nav-menu.active li{
+    float: none; 
+    width: 100%;
+  }
+  
+  .nav-menu.active li a{
+    display: block; 
+    width: 100%; 
+    padding: 20px; 
+    border-left: 5px solid; 
+    position: relative; 
+    z-index: 2;
+    text-decoration: none;
+    color: #444;
+    box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    -webkit-box-sizing: border-box; 
+  }
+    
+  .nav-menu.active li a:hover{ border-bottom: 0px; color: #fff;}
+  .nav-menu.active li:first-child a{ border-left: 10px solid #3498db; }
+  .nav-menu.active li:nth-child(2) a{ border-left: 10px solid #ffd071; }
+  .nav-menu.active li:nth-child(3) a{ border-left: 10px solid #f0776c; }
+  .nav-menu.active li:nth-child(4) a{ border-left: 10px solid #454545; }
+  .nav-menu.active li:last-child a{ border-left: 10px solid #1abc9c; }
+  
+  .nav-menu.active li a:after { 
+    content: "";
+    height: 100%; 
+    left: 0; 
+    top: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: all 0.3s ease 0s; 
+    -webkit-transition: all 0.3s ease 0s; 
+    z-index: -1;
+  }
+  
+  .nav-menu.active li a:hover:after{ width: 100%; }
+  .nav-menu.active li:first-child a:after{ background: #3498db; }
+  .nav-menu.active li:nth-child(2) a:after{ background: #ffd071; }
+  .nav-menu.active li:nth-child(3) a:after{ background: #f0776c; }
+  .nav-menu.active li:nth-child(4) a:after{ background: #454545; }
+  .nav-menu.active li:last-child a:after{ background: #1abc9c; }
+  
+  
+  
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Lato Hairline'), local('Lato-Hairline'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/boeCNmOCCh-EWFLSfVffDg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Lato Light'), local('Lato-Light'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/KT3KS9Aol4WfR6Vas8kNcg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/9k-RPmcnxYEPm8CNFsH2gg.woff) format('woff');
+  }
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
+  }
