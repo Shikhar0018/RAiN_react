@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Rain_react/static/css/main.9840c410.chunk.css",
+    "main.js": "/Rain_react/static/js/main.50f783c6.chunk.js",
+    "main.js.map": "/Rain_react/static/js/main.50f783c6.chunk.js.map",
+    "runtime-main.js": "/Rain_react/static/js/runtime-main.07a32338.js",
+    "runtime-main.js.map": "/Rain_react/static/js/runtime-main.07a32338.js.map",
+    "static/js/2.b20884cc.chunk.js": "/Rain_react/static/js/2.b20884cc.chunk.js",
+    "static/js/2.b20884cc.chunk.js.map": "/Rain_react/static/js/2.b20884cc.chunk.js.map",
+    "static/js/3.b756fc88.chunk.js": "/Rain_react/static/js/3.b756fc88.chunk.js",
+    "static/js/3.b756fc88.chunk.js.map": "/Rain_react/static/js/3.b756fc88.chunk.js.map",
+    "index.html": "/Rain_react/index.html",
+    "static/css/main.9840c410.chunk.css.map": "/Rain_react/static/css/main.9840c410.chunk.css.map",
+    "static/js/2.b20884cc.chunk.js.LICENSE.txt": "/Rain_react/static/js/2.b20884cc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07a32338.js",
+    "static/js/2.b20884cc.chunk.js",
+    "static/css/main.9840c410.chunk.css",
+    "static/js/main.50f783c6.chunk.js"
+  ]
+}
